@@ -1104,7 +1104,7 @@
 
 // @section homing
 
-//#define NO_MOTION_BEFORE_HOMING // Inhibit movement until all axes have been homed
+#define NO_MOTION_BEFORE_HOMING // Inhibit movement until all axes have been homed
 
 //#define UNKNOWN_Z_NO_RAISE      // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 
@@ -1353,7 +1353,7 @@
 #define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
-  #define LEVEL_CORNERS_INSET_LFRB { 22, 22, 22, 22 } // (mm) Left, Front, Right, Back insets
+  #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
   #define LEVEL_CORNERS_HEIGHT      0.0   // (mm) Z height of nozzle at leveling points
   #define LEVEL_CORNERS_Z_HOP       4.0   // (mm) Z height of nozzle between leveling points
   #define LEVEL_CENTER_TOO              // Move to the center after the last corner
@@ -1393,7 +1393,7 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_XY (50*60)
+#define HOMING_FEEDRATE_XY (80*60)
 #define HOMING_FEEDRATE_Z  (4*60)
 
 // Validate that endstops are triggered on homing moves
