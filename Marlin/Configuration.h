@@ -1288,7 +1288,7 @@
  *
  *  - RAMPS 1.3/1.4 boards may use the 5V, GND, and Aux4->D32 pin:
  *    - For simple switches connect...
- *      - normally-closed switches to GND and D32.
+ *      - normally-closed switches to GND and D32.df
  *      - normally-open switches to 5V and D32.
  */
 #define Z_MIN_PROBE_PIN PC_13 // Pin 32 is the RAMPS default
