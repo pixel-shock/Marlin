@@ -614,7 +614,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 250
+#define HEATER_0_MAXTEMP 300
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -1165,7 +1165,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.80, 81.75, 403.47, 139.19 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.80, 81.75, 403.47, 932 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
